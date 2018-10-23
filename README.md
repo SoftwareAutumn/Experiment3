@@ -4,11 +4,11 @@
 
 ***space.jpg***
 
-![space](\img3\space.jpg)
+![space](/img3/space.jpg)
 
 ***superman.jpg***
 
-![superman](\img3\superman.jpg)
+![superman](/img3/superman.jpg)
 
 **二、思路：superman.jpg图像中的像素值用（r,g,b）表示，条件1：10<r<160; 条件2：100<g<220; 条件3：10<b<110；同时满足这三个条件的像素为绿幕区域像素。把满条件像素的值，修改为相应的太空背景图片的像素值，即相当于把超人抠到太空背景中。**
 
@@ -97,7 +97,7 @@ int main()
 	poDstDS->GetRasterBand(1)->RasterIO(GF_Write, 0, 0, imgXlen2, imgYlen2, buffTmp2_1, imgXlen2, imgYlen2, GDT_Byte, 0, 0);
 	poDstDS->GetRasterBand(2)->RasterIO(GF_Write, 0, 0, imgXlen2, imgYlen2, buffTmp2_2, imgXlen2, imgYlen2, GDT_Byte, 0, 0);
 	poDstDS->GetRasterBand(3)->RasterIO(GF_Write, 0, 0, imgXlen2, imgYlen2, buffTmp2_3, imgXlen2, imgYlen2, GDT_Byte, 0, 0);
-
+	
 	//清除内存
 	CPLFree(buffTmp1_1);
 	CPLFree(buffTmp2_1);
@@ -116,7 +116,7 @@ int main()
 
 ***结果如下：***
 
-![result](\img3\result.jpg)
+![result](/img3/result.jpg)
 
 **三、经验总结：若想知道像素值（r,g,b）是否同时满足条件1：10<r<160; 条件2：100<g<220; 条件3：10<b<110；则需要分别对图像的每一通道的所有像素值分配内存，并比较。若同时满足条件，则将像素值修改为对应的太空图像的像素值，即将太空背景填充到绿幕之中。**
 
