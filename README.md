@@ -14,7 +14,8 @@
 
 ***代码如下：***
 
-#include "pch.h"
+```
+`#include "pch.h"
 #include <iostream>
 using namespace std;
 #include "./gdal/gdal_priv.h"
@@ -22,29 +23,32 @@ using namespace std;
 
 int main()
 {
-​	//输入图像
-​	GDALDataset* poSrcDS1;
-​	GDALDataset* poSrcDS2;
-​	//输出图像
-​	GDALDataset* poDstDS;
-​	//图像的宽度和高度
-​	int imgXlen1, imgYlen1,imgXlen2, imgYlen2;
-​	//输入图像路径
-​	char* srcPath1 = (char*)"space.jpg";
-​	char* srcPath2 = (char*)"superman.jpg";
-​	//输出图像路径
-​	char* dstPath = (char*)"result.jpg";
-​	//图像内存存储
-​	GByte* buffTmp1_1;
-​	GByte* buffTmp1_2;
-​	GByte* buffTmp1_3;
-​	GByte* buffTmp2_1;
-​	GByte* buffTmp2_2;
-​	GByte* buffTmp2_3;
-​	//图像波段数
-​	int i, j, bandNum1, bandNum2;
-​	//像素值
-​	int r, g, b;
+	//输入图像
+	GDALDataset* poSrcDS1;
+	GDALDataset* poSrcDS2;
+	//输出图像
+	GDALDataset* poDstDS;
+	//图像的宽度和高度
+	int imgXlen1, imgYlen1,imgXlen2, imgYlen2;
+	//输入图像路径
+	char* srcPath1 = (char*)"space.jpg";
+	char* srcPath2 = (char*)"superman.jpg";
+	//输出图像路径
+	char* dstPath = (char*)"result.jpg";
+	//图像内存存储
+	GByte* buffTmp1_1;
+	GByte* buffTmp1_2;
+	GByte* buffTmp1_3;
+	GByte* buffTmp2_1;
+	GByte* buffTmp2_2;
+	GByte* buffTmp2_3;
+	//图像波段数
+	int i, j, bandNum1, bandNum2;
+	//像素值
+	int r, g, b;`
+```
+
+
 
 	//注册驱动
 	GDALAllRegister();
