@@ -1,6 +1,6 @@
 - # **实验代码**
 
-```
+~~~c++
 // lesson3.cpp: 定义控制台应用程序的入口点。`
 `//`
 
@@ -12,18 +12,18 @@
 
 `int main()`
 `{`
-​	GDALDataset* poSrcDS;
-​	GDALDataset* poDstDS;
-​	char* srcPath = "superman.jpg";
-​	char* src1Path = "space.jpg";
-​	char* dstPath = "final.tif";
-​	GByte* buffTmp1, *buffTmp2, *buffTmp3, *buffTmp11, *buffTmp12, *buffTmp13;
-​	int imgXlen, imgYlen;
-​	int img1Xlen, img1Ylen, bandNum1;
-​	int i;
-​	int j;
+	GDALDataset* poSrcDS;
+	GDALDataset* poDstDS;
+	char* srcPath = "superman.jpg";
+	char* src1Path = "space.jpg";
+	char* dstPath = "final.tif";
+	GByte* buffTmp1, *buffTmp2, *buffTmp3, *buffTmp11, *buffTmp12, *buffTmp13;
+	int imgXlen, imgYlen;
+	int img1Xlen, img1Ylen, bandNum1;
+	int i;
+	int j;
 
-​```
+```
 GDALAllRegister();
 
 /*
@@ -82,10 +82,12 @@ GDALClose(poDstDS);
 GDALClose(poSrcDS);
 system("PAUSE");
 return 0;
-​```
+
+
+```
 
 `}
-```
+~~~
 
 
 
