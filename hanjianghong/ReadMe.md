@@ -95,7 +95,9 @@ return 0;
 
 - # 实验结果截图：
 
-![](C:\Users\dell\AppData\Roaming\Typora\typora-user-images\1540610663727.png)
+![](http://t1.aixinxi.net/o_1cqpopajgerb14v91lac1m9qa92c.png-j.jpg)
+
+
 
 
 
